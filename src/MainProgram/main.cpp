@@ -2,14 +2,15 @@
 #include <experimental/filesystem>
 #include <experimental/string_view>
 #include <thread>
+
+#include "Parser.h"
+
 using namespace std;
 namespace fs = std::experimental::filesystem;
 
 int main()
 {
-    std::thread th([](){ cout << "Test" << endl; });
-    th.join();
+    A a;
 
-    cout << "Hello World!" << endl;
     return 0;
 }

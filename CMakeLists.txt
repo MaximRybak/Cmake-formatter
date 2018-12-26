@@ -17,6 +17,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build)
 #Enable c++17
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -lstdc++fs -pthread")
 
+add_executable(${PROJECT_NAME} ${SOURCE_DIR}/MainProgram/main.cpp)
+
 include(${SOURCE_DIR}/CMakeLists.txt)
-
-
