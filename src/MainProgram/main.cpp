@@ -9,6 +9,7 @@ int main()
 {
     std::thread th([](){ cout << "Test" << endl; });
     th.join();
+
     cout << "Hello World!" << endl;
     return 0;
 }
